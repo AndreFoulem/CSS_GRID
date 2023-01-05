@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles.css" />
     <title>Fundamentals - Grid</title>
-    <style>
-      p {
-        font-size: 50px;
-        color: var(--black);
-      }
-    </style>
   </head>
   <body>
     <div class="container">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
+      <!-- .item{$}*10 -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
     </div>
+    <style>
+      .container {
+        /* 1fr > auto */
+
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 100px 400px;
+        gap: 20px;
+      }
+    </style>
   </body>
 </html>
